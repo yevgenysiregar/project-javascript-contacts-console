@@ -1,8 +1,8 @@
 const names = ["Sadio Mane", "Bobby Firmino", "Mo Salah"];
 
-const showNames = function(names) {
-  for (let index = 0; index < names.length; index++) {
-    const peopleName = names[index];
+const showNames = function(name) {
+  for (let index = 0; index < name.length; index++) {
+    const peopleName = name[index];
     console.log(`[${index + 1}] ${peopleName}`);
   }
 };
@@ -10,10 +10,10 @@ showNames(names);
 
 const lfcPlayer = ["Sadio Mane", "Bobby Firmino", "Mo Salah"];
 
-const filterNames = function(lfcPlayer, minimumLength) {
+const filterNames = function(player, minimumLength) {
   let newNames = [];
-  for (let index = 0; index < lfcPlayer.length; index++) {
-    const striker = lfcPlayer[index];
+  for (let index = 0; index < player.length; index++) {
+    const striker = player[index];
 
     if (striker.length >= minimumLength) {
       newNames.push(striker);
@@ -56,10 +56,10 @@ const showContacts = function(myContacts) {
 };
 showContacts(myContacts);
 
-const filterContacts = function(myContacts, minimumNameLength) {
+const filterContacts = function(myContact, minimumNameLength) {
   let newContacts = [];
-  for (let index = 0; index < myContacts.length; index++) {
-    const contact = myContacts[index];
+  for (let index = 0; index < myContact.length; index++) {
+    const contact = myContact[index];
     if (contact.name.length >= minimumNameLength) {
       newContacts.push(contact);
     }
